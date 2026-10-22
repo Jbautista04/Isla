@@ -81,10 +81,10 @@ function makePlayer(){
   mesh(new THREE.SphereGeometry(.045,8,8),eyeMat,playerGroup,-.105,1.75,.27);
   mesh(new THREE.SphereGeometry(.045,8,8),eyeMat,playerGroup,.105,1.75,.27);
   const legs=mat('#244e66');
-  player.leftLeg=mesh(new THREE.CapsuleGeometry(.13,.45,3,7),legs,playerGroup,-.18,.42,0);
-  player.rightLeg=mesh(new THREE.CapsuleGeometry(.13,.45,3,7),legs,playerGroup,.18,.42,0);
+  const leftLeg=mesh(new THREE.CapsuleGeometry(.13,.45,3,7),legs,playerGroup,-.18,.42,0);
+  const rightLeg=mesh(new THREE.CapsuleGeometry(.13,.45,3,7),legs,playerGroup,.18,.42,0);
   playerGroup.position.set(0,1,8);
-  player={group:playerGroup,leftLeg:playerGroup.children[6],rightLeg:playerGroup.children[7],body:playerGroup.children[0]};
+  player={group:playerGroup,leftLeg,rightLeg,body};
   playerGroup.traverse(o=>{if(o.isMesh)o.castShadow=true;});
 }
 function makePalm(parent,x,z,scale=1){
