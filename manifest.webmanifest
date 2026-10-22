@@ -1,0 +1,11 @@
+{
+  "name": "Isla Prisma 3D",
+  "short_name": "Isla Prisma",
+  "description": "Aventura 3D para iPhone",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#061d35",
+  "theme_color": "#061d35",
+  "orientation": "any",
+  "icons": [{"src":"./assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
