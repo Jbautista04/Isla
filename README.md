@@ -1,24 +1,23 @@
-# Damas RD — El tablero se respeta
+# DAMAS RD — by Juan Tejeda
 
-Juego web de damas para iPhone/Safari, con diseño móvil, tablero interactivo y partidas sin cuenta.
+Juego web autocontenido de damas para Safari/iPhone. No usa CDN ni librerías externas, así que evita el error de carga por dependencias externas.
 
-## Funciones
-- Tablero 8×8 y fichas con estilo visual inspirado en madera.
-- Modo individual contra CPU (tranquila, competitiva y difícil).
-- Modo local para dos jugadores en el mismo teléfono.
-- Capturas obligatorias, encadenamiento de capturas, coronación, deshacer y girar el tablero.
-- Interfaz adaptable a iPhone y opción de añadir a pantalla de inicio.
-- Sin dependencias externas ni backend para jugar localmente.
+## Incluye
+- Tablero táctil 8×8 con diseño inspirado en madera.
+- CPU en tres niveles y modo local de dos jugadores.
+- Captura obligatoria, capturas múltiples, coronación, deshacer y girar tablero.
+- Marca “by Juan Tejeda”.
+- Interfaz adaptable a móvil y opción de añadir a pantalla de inicio.
 
 ## Publicación gratuita
 1. Crea un repositorio público en https://github.com/new
-2. Sube `index.html` y `README.md` a la raíz.
-3. Abre Settings → Pages.
-4. Selecciona Deploy from a branch, rama `main`, carpeta `/ (root)` y guarda.
-5. Abre la URL publicada en Safari y pulsa Compartir → Añadir a pantalla de inicio.
+2. Sube `index.html` y `README.md` a la raíz del repositorio.
+3. Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save.
+4. Espera la publicación y abre el enlace en Safari.
+5. Compartir → Añadir a pantalla de inicio.
 
-## Importante sobre las reglas
-Esta versión implementa reglas de damas de tablero 8×8 con movimientos diagonales, captura obligatoria y coronación. Las reglas de torneos dominicanos pueden variar según la variante regional; antes de promoverla como reglamento oficial, validar la variante exacta que se quiere representar.
+## Nota sobre las reglas
+Se implementa una variante de tablero 8×8 con captura obligatoria, hombres que capturan en ambas direcciones, dama de un paso y capturas encadenadas. Las reglas locales pueden variar entre grupos; valida esta variante con jugadores dominicanos antes de anunciarla como reglamento oficial.
 
-## Online futuro
-El modo por Internet no está implementado. Para competir entre teléfonos hacen falta salas y sincronización real (por ejemplo, Supabase Realtime o WebSocket), validación de jugadas en servidor y manejo de desconexiones. No se simula como función existente.
+## Multijugador online
+No está implementado aún. Requiere salas reales, sincronización de movimientos, control de turnos en servidor y reconexión. El modo local permite jugar en el mismo dispositivo.
